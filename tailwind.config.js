@@ -52,10 +52,21 @@ module.exports = {
                         transform: "translateX(0)"
                     }
                 },
+                'moveInBottom': {
+                    '0%': {
+                        opacity: 0,
+                        transform: "translateY(30px)"
+                    },
+                    '100%': {
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    }
+                }
             },
             animation: {
                 'moveLeft': 'moveInLeft 1s ease-out',
                 'moveRight': 'moveInRight 1s ease-out',
+                'moveBottom': 'moveInBottom 0.5s ease-out 0.75s backwards'
             },
             boxShadow: {
                 'button-hover': '0 10px 20px rgba(0,0,0,.2)',

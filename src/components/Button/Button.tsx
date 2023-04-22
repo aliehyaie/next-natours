@@ -1,8 +1,8 @@
 import React, {PropsWithChildren} from 'react';
 
-const Button: React.FC<PropsWithChildren> = ({children}) => {
+const Button: React.FC<PropsWithChildren & {className?:string}> = ({children, className = ''}) => {
     return (
-        <button className='bg-white text-text py-4
+        <button className={`bg-white text-text py-4
          rounded-full
          transition-all
          relative
@@ -24,9 +24,9 @@ const Button: React.FC<PropsWithChildren> = ({children}) => {
         hover:before:opacity-0
         hover:before:scale-x-[1.4]
         hover:before:scale-y-[1.6]
-
-
-        px-10 inline-block hover:-translate-y-1 active:-translate-y-px'>
+        px-10 inline-block hover:-translate-y-1 active:-translate-y-px
+           ${className}
+        `}>
             {children}
         </button>
     );

@@ -18,7 +18,7 @@ const Header = () => {
                     <span className='text-6xl tracking-[35px] animate-moveLeft'>Outdoors</span>
                     <span className='text-xl tracking-[16px] animate-moveRight'>is where life happens</span>
                    </h1>
-                <Button>
+                <Button className='mt-6 animate-moveBottom'>
                     DISCOVER OUR TOURS
                 </Button>
             </div>
