@@ -13,7 +13,11 @@ module.exports = {
             lightGreen: '#7ed56f',
             mediumGreen: '#55c57a',
             darkGreen: '#28b485',
-            text: '#777'
+            text: '#777',
+            transparent: 'transparent',
+            grey: {
+                light1: '#f7f7f7'
+            }
         },
         extend: {
             content: {
@@ -23,7 +27,10 @@ module.exports = {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic':
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-                'hero': "linear-gradient(to right bottom, #7ed56f80 , #28b48580), url('/img/hero.jpg')"
+                'hero': "linear-gradient(to right bottom, #7ed56f80 , #28b48580), url('/img/hero.jpg')",
+            },
+            padding: {
+                '62.5': '15.625rem'
             },
             keyframes: {
                 'moveInLeft': {
@@ -74,7 +81,8 @@ module.exports = {
             },
             gap: {
                 horizontal: '6rem',
-                vertical: '8rem'
+                vertical: '8rem',
+                '7.5':'1.875rem'
             }
         },
     },

@@ -1,8 +1,13 @@
 import React, {PropsWithChildren} from 'react';
 
-const Button: React.FC<PropsWithChildren & {className?:string}> = ({children, className = ''}) => {
+const Button: React.FC<PropsWithChildren & { className?: string; type?: 'primary' | 'secondary' }> = ({
+                                                                                                          children,
+                                                                                                          type = 'primary',
+                                                                                                          className = ''
+                                                                                                      }) => {
     return (
-        <button className={`bg-white text-text py-4
+        <button className={`
+        ${type === 'primary' ? `bg-white text-text py-4
          rounded-full
          transition-all
          relative
@@ -25,6 +30,12 @@ const Button: React.FC<PropsWithChildren & {className?:string}> = ({children, cl
         hover:before:scale-x-[1.4]
         hover:before:scale-y-[1.6]
         px-10 inline-block hover:-translate-y-1 active:-translate-y-px
+        ` : `text-mediumGreen inline-block border-b border-mediumGreen 
+        p-1 text-base 
+        transition-all duration-200
+        hover:bg-mediumGreen hover:text-white hover:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:-translate-y-0.5
+        active:shadow-[0_0.5rem_1rem_rgba(0,0,0,0.15)] active:translate-0
+        `}
            ${className}
         `}>
             {children}
