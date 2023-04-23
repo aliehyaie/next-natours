@@ -1,6 +1,7 @@
 import Header from "../components/Header/Header";
 import Container from "@/components/Hoc/Container/Container";
 import Button from "@/components/Button/Button";
+import Image from "next/image";
 
 export default function Home() {
     return (
@@ -21,7 +22,8 @@ export default function Home() {
                                     </h3>
                                     <p className='paragraph'>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae deleniti
-                                        explicabo iste odio unde? Amet blanditiis culpa dolor obcaecati repellat repudiandae
+                                        explicabo iste odio unde? Amet blanditiis culpa dolor obcaecati repellat
+                                        repudiandae
                                         suscipit. Aut dignissimos et, officiis quas ratione sint!
                                     </p>
                                 </div>
@@ -30,7 +32,8 @@ export default function Home() {
                                         Leave adventures like you never have before
                                     </h3>
                                     <p className='paragraph'>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae cumque
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae
+                                        cumque
                                         error fugiat fugit iusto nemo, quam quas reiciendis voluptas?
                                     </p>
                                 </div>
@@ -39,7 +42,61 @@ export default function Home() {
                                 </Button>
                             </div>
                             <div className='flex-1'>
-                                2
+                                <div className='relative
+                                group/composition
+                                '>
+                                    <Image width={300} height={256} src='/img/nat-1-large.jpg' alt='Photo 1'
+                                           className='shadow-[0_1.5rem_4rem_rgba(0,0,0,0.4)]
+                                            absolute
+                                            left-0
+                                            -top-8
+                                            transition-all duration-200
+                                            outline-offset-[1.25rem]
+                                            hover:scale-105
+                                            hover:-translate-y-1.5
+                                            hover:outline
+                                            hover:outline-[1rem]
+                                            hover:outline-mediumGreen
+                                            hover:shadow-[0_2.5rem_4rem_rgba(0,0,0,0.5)]
+                                            group-hover/composition:[&:not(:hover)]:scale-95
+                                            hover:z-10
+                                        '
+                                    />
+                                    <Image width={300} height={256} src='/img/nat-2-large.jpg' alt='Photo 2'
+                                           className='shadow-[0_1.5rem_4rem_rgba(0,0,0,0.4)]
+                                            absolute
+                                            right-0
+                                            top-8
+                                            transition-all duration-200
+                                            outline-offset-[1.25rem]
+                                            hover:scale-105
+                                            hover:-translate-y-1.5
+                                            hover:outline
+                                            hover:outline-[1rem]
+                                            hover:outline-mediumGreen
+                                            hover:shadow-[0_2.5rem_4rem_rgba(0,0,0,0.5)]
+                                            group-hover/composition:[&:not(:hover)]:scale-95
+                                            hover:z-10
+                                        '
+                                    />
+                                    <Image width={300} height={256} src='/img/nat-3-large.jpg' alt='Photo 3'
+                                           className='shadow-[0_1.5rem_4rem_rgba(0,0,0,0.4)]
+                                            absolute
+                                            left-[20%]
+                                            top-24
+                                            transition-all duration-200
+                                            outline-offset-[1.25rem]
+                                            hover:scale-105
+                                            hover:-translate-y-1.5
+                                            hover:outline
+                                            hover:outline-[1rem]
+                                            hover:outline-mediumGreen
+                                            hover:shadow-[0_2.5rem_4rem_rgba(0,0,0,0.5)]
+                                            group-hover/composition:[&:not(:hover)]:scale-95
+                                            hover:z-10
+                                        '
+                                    />
+                                </div>
                             </div>
                         </div>
                     </Container>
