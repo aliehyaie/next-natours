@@ -71,6 +71,10 @@ module.exports = {
             boxShadow: {
                 'button-hover': '0 10px 20px rgba(0,0,0,.2)',
                 'button-active': '0 5px 10px rgba(0,0,0,.2)'
+            },
+            gap: {
+                horizontal: '6rem',
+                vertical: '8rem'
             }
         },
     },
