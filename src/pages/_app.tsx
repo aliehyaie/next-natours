@@ -1,4 +1,5 @@
 import '@/styles/globals.scss'
+import '@/styles/icon-font.scss';
 import type {AppProps} from 'next/app'
 import {Lato} from 'next/font/google';
 

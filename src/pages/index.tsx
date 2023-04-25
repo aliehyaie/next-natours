@@ -2,6 +2,8 @@ import Header from "../components/Header/Header";
 import Container from "@/components/Hoc/Container/Container";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
+import Icon from "@/components/Icon/Icon";
+import FeatureCard from "@/components/FeatureCard/FeatureCard";
 
 export default function Home() {
     return (
@@ -100,6 +102,19 @@ export default function Home() {
                             </div>
                         </div>
                     </Container>
+                </section>
+                <section className='py-50 bg-features bg-cover -skew-y-6 [&>*]:skew-y-6 -mt-20'>
+                    <div className='flex justify-between items-center flex-wrap px-4 gap-4'>
+                        <FeatureCard iconName='icon-basic-world' title='Explore the world'
+                                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
+                        <FeatureCard iconName='icon-basic-compass' title='Meet nature'
+                                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
+                        <FeatureCard iconName='icon-basic-map' title='Find your way'
+                                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
+                        <FeatureCard iconName='icon-basic-heart' title='Leave a healthier life'
+                                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
+
+                    </div>
                 </section>
             </main>
         </>

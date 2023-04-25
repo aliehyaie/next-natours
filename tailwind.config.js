@@ -28,8 +28,10 @@ module.exports = {
                 'gradient-conic':
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
                 'hero': "linear-gradient(to right bottom, #7ed56f80 , #28b48580), url('/img/hero.jpg')",
+                'features': "linear-gradient(to right bottom, #7ed56f80 , #28b48580), url('/img/nat-4.jpg')",
             },
             padding: {
+                '50': '12.5rem',
                 '62.5': '15.625rem'
             },
             keyframes: {
@@ -82,7 +84,7 @@ module.exports = {
             gap: {
                 horizontal: '6rem',
                 vertical: '8rem',
-                '7.5':'1.875rem'
+                '7.5': '1.875rem'
             }
         },
     },
