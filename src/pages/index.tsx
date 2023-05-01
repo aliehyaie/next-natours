@@ -124,10 +124,20 @@ export default function Home() {
                             Most popular tours
                         </h2>
                         <div className='flex justify-between'>
-                            <TourCard type='primary' />
-                            <TourCard type='secondary'/>
+                            <TourCard
+                                title='The Sea Explorer'
+                                type='primary'
+                                facilities={[
+                                    '3 day tours',
+                                    'Up to 30 people',
+                                    '2 tour guides',
+                                    'Sleep in cozy hotels',
+                                    'Difficulty: easy'
+                                ]}
+                            />
+                  {/*          <TourCard type='secondary'/>
                             <TourCard type='tertiary'/>
-                        </div>
+                  */}      </div>
                     </Container>
                 </section>
             </main>

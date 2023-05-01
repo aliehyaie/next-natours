@@ -48,15 +48,16 @@ module.exports = {
             primaryLight: '#7ed56f',
             primary: '#55c57a',
             primaryDark: '#28b485',
-            secondaryLight:'#ffb900',
-            secondaryDark:'#ff7730',
-            tertiaryLight:'#2998ff',
-            tertiaryDark:'#5643fa',
+            secondaryLight: '#ffb900',
+            secondaryDark: '#ff7730',
+            tertiaryLight: '#2998ff',
+            tertiaryDark: '#5643fa',
             text: '#777',
             transparent: 'transparent',
-            
+
             grey: {
-                light1: '#f7f7f7'
+                light1: '#f7f7f7',
+                light2: '#eee'
             }
         },
         extend: {
@@ -128,5 +129,5 @@ module.exports = {
             }
         },
     },
-    plugins: [rotateY, perspective,backfaceVisibility],
+    plugins: [rotateY, perspective, backfaceVisibility],
 }
