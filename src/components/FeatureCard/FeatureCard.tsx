@@ -10,10 +10,10 @@ const FeatureCard: React.FC<{ iconName: string; title: string; description: stri
         <div className='bg-white bg-opacity-80 text-base p-6 text-center rounded-sm shadow-[0_1rem_2.5rem_rgba(0,0,0,0.15)] flex flex-col gap-2.5
         transition-all duration-300
             hover:-translate-y-1.5
-            max-w-[300px]
+            max-w-[270px]
 
         '>
-            <Icon className='text-6xl main-gradient bg-clip-text text-transparent' iconName={iconName}/>
+            <Icon className='text-6xl primary-gradient bg-clip-text text-transparent' iconName={iconName}/>
             <h3>{title}</h3>
             <p>{description}</p>
         </div>

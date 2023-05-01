@@ -21,12 +21,20 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   }
 
-  .main-gradient {
-    @apply bg-gradient-to-r from-lightGreen to-darkGreen;
+  .primary-gradient {
+    @apply bg-gradient-to-br from-primaryLight to-primaryDark;
+  }
+
+  .secondary-gradient {
+    @apply bg-gradient-to-br from-secondaryLight to-secondaryDark;
+  }
+
+  .tertiary-gradient {
+    @apply bg-gradient-to-br from-tertiaryLight to-tertiaryDark;
   }
 
   .secondary-header {
-    @apply text-4xl uppercase font-bold main-gradient bg-clip-text text-transparent flex justify-center
+    @apply text-4xl uppercase font-bold primary-gradient bg-clip-text text-transparent flex justify-center
     tracking-[0.2rem]
     transition-all duration-200
     hover:skew-x-12

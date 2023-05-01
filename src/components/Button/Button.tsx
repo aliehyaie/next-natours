@@ -30,10 +30,10 @@ const Button: React.FC<PropsWithChildren & { className?: string; type?: 'primary
         hover:before:scale-x-[1.4]
         hover:before:scale-y-[1.6]
         px-10 inline-block hover:-translate-y-1 active:-translate-y-px
-        ` : `text-mediumGreen inline-block border-b border-mediumGreen 
+        ` : `text-primary inline-block border-b border-primary 
         p-1 text-base 
         transition-all duration-200
-        hover:bg-mediumGreen hover:text-white hover:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:-translate-y-0.5
+        hover:bg-primary hover:text-white hover:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:-translate-y-0.5
         active:shadow-[0_0.5rem_1rem_rgba(0,0,0,0.15)] active:translate-0
         `}
            ${className}

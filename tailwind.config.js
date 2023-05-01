@@ -1,5 +1,40 @@
 /** @type {import('tailwindcss').Config} */
-const {translate} = require("autoprefixer/lib/hacks/grid-utils");
+
+const plugin = require('tailwindcss/plugin');
+
+const rotateY = plugin(({addUtilities}) => {
+    addUtilities({
+        '.rotate-y-0': {
+            transform: 'rotateY(0)',
+        },
+        '.rotate-y-180': {
+            transform: 'rotateY(180deg)',
+        },
+        '.-rotate-y-180': {
+            transform: 'rotateY(-180deg)',
+        }
+    })
+});
+
+const perspective = plugin(({matchUtilities}) => {
+    matchUtilities({
+        'perspective': (value) => ({
+            perspective: value
+        })
+    })
+});
+
+const backfaceVisibility = plugin(({addUtilities}) => {
+    addUtilities({
+        '.backface-visible': {
+            'backface-visibility': 'visible',
+        },
+        '.backface-hidden': {
+            'backface-visibility': 'hidden',
+        }
+    })
+});
+
 module.exports = {
     important: true,
     content: [
@@ -10,11 +45,16 @@ module.exports = {
     theme: {
         colors: {
             white: '#fff',
-            lightGreen: '#7ed56f',
-            mediumGreen: '#55c57a',
-            darkGreen: '#28b485',
+            primaryLight: '#7ed56f',
+            primary: '#55c57a',
+            primaryDark: '#28b485',
+            secondaryLight:'#ffb900',
+            secondaryDark:'#ff7730',
+            tertiaryLight:'#2998ff',
+            tertiaryDark:'#5643fa',
             text: '#777',
             transparent: 'transparent',
+            
             grey: {
                 light1: '#f7f7f7'
             }
@@ -88,5 +128,5 @@ module.exports = {
             }
         },
     },
-    plugins: [],
+    plugins: [rotateY, perspective,backfaceVisibility],
 }

@@ -4,6 +4,7 @@ import Button from "@/components/Button/Button";
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
+import TourCard from "@/components/TourCard/TourCard";
 
 export default function Home() {
     return (
@@ -58,7 +59,7 @@ export default function Home() {
                                             hover:-translate-y-1.5
                                             hover:outline
                                             hover:outline-[1rem]
-                                            hover:outline-mediumGreen
+                                            hover:outline-primary
                                             hover:shadow-[0_2.5rem_4rem_rgba(0,0,0,0.5)]
                                             group-hover/composition:[&:not(:hover)]:scale-95
                                             hover:z-10
@@ -75,7 +76,7 @@ export default function Home() {
                                             hover:-translate-y-1.5
                                             hover:outline
                                             hover:outline-[1rem]
-                                            hover:outline-mediumGreen
+                                            hover:outline-primary
                                             hover:shadow-[0_2.5rem_4rem_rgba(0,0,0,0.5)]
                                             group-hover/composition:[&:not(:hover)]:scale-95
                                             hover:z-10
@@ -92,7 +93,7 @@ export default function Home() {
                                             hover:-translate-y-1.5
                                             hover:outline
                                             hover:outline-[1rem]
-                                            hover:outline-mediumGreen
+                                            hover:outline-primary
                                             hover:shadow-[0_2.5rem_4rem_rgba(0,0,0,0.5)]
                                             group-hover/composition:[&:not(:hover)]:scale-95
                                             hover:z-10
@@ -104,17 +105,30 @@ export default function Home() {
                     </Container>
                 </section>
                 <section className='py-50 bg-features bg-cover -skew-y-6 [&>*]:skew-y-6 -mt-20'>
-                    <div className='flex justify-between items-center flex-wrap px-4 gap-4'>
-                        <FeatureCard iconName='icon-basic-world' title='Explore the world'
-                                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
-                        <FeatureCard iconName='icon-basic-compass' title='Meet nature'
-                                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
-                        <FeatureCard iconName='icon-basic-map' title='Find your way'
-                                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
-                        <FeatureCard iconName='icon-basic-heart' title='Leave a healthier life'
-                                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
-
-                    </div>
+                    <Container>
+                        <div className='flex justify-between items-center flex-wrap gap-4'>
+                            <FeatureCard iconName='icon-basic-world' title='Explore the world'
+                                         description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
+                            <FeatureCard iconName='icon-basic-compass' title='Meet nature'
+                                         description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
+                            <FeatureCard iconName='icon-basic-map' title='Find your way'
+                                         description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
+                            <FeatureCard iconName='icon-basic-heart' title='Leave a healthier life'
+                                         description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem eaque iusto maiores odio omnis porro quas reiciendis rerum temporibus.'/>
+                        </div>
+                    </Container>
+                </section>
+                <section className='-mt-20 pt-64 pb-[31rem] bg-grey-light1'>
+                    <Container>
+                        <h2 className='secondary-header mb-20'>
+                            Most popular tours
+                        </h2>
+                        <div className='flex justify-between'>
+                            <TourCard type='primary' />
+                            <TourCard type='secondary'/>
+                            <TourCard type='tertiary'/>
+                        </div>
+                    </Container>
                 </section>
             </main>
         </>
