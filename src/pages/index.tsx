@@ -118,7 +118,7 @@ export default function Home() {
                         </div>
                     </Container>
                 </section>
-                <section className='-mt-20 pt-64 pb-[31rem] bg-grey-light1'>
+                <section className='-mt-20 pt-64 pb-40 bg-grey-light1'>
                     <Container>
                         <h2 className='secondary-header mb-20'>
                             Most popular tours
@@ -126,18 +126,46 @@ export default function Home() {
                         <div className='flex justify-between'>
                             <TourCard
                                 title='The Sea Explorer'
-                                type='primary'
+                                type='secondary'
                                 facilities={[
-                                    '3 day tours',
+                                    '3 day tour',
                                     'Up to 30 people',
                                     '2 tour guides',
                                     'Sleep in cozy hotels',
                                     'Difficulty: easy'
                                 ]}
+                                price={297}
                             />
-                  {/*          <TourCard type='secondary'/>
-                            <TourCard type='tertiary'/>
-                  */}      </div>
+                            <TourCard
+                                title='The Forest Hiker'
+                                type='primary'
+                                facilities={[
+                                    '7 day tour',
+                                    'Up to 40 people',
+                                    '6 tour guides',
+                                    'Sleep in provided tents',
+                                    'Difficulty: medium'
+                                ]}
+                                price={497}
+                            />
+                            <TourCard
+                                title='The Snow Adventurer'
+                                type='tertiary'
+                                facilities={[
+                                    '5 day tour',
+                                    'Up to 15 people',
+                                    '3 tour guides',
+                                    'Sleep in provided tents',
+                                    'Difficulty: hard'
+                                ]}
+                                price={497}
+                            />
+                     </div>
+                        <div className='text-center'>
+                            <Button className='bg-primary text-white mt-24 before:bg-primary'>
+                                Discover all tours
+                            </Button>
+                        </div>
                     </Container>
                 </section>
             </main>
