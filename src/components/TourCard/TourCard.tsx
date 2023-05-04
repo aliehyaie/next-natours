@@ -12,6 +12,7 @@ const TourCard: React.FC<{
           facilities,
           price
       }) => {
+
     const sideClasses = 'h-full transition-all ' +
         'duration-700 w-full  absolute top-0 left-0' +
         ' backface-hidden ease shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] rounded'
@@ -39,7 +40,7 @@ const TourCard: React.FC<{
                  w-9/12 top-24 leading-loose right-5'>
                     <span
                         className={`py-4 px-5 box-decoration-clone ${type === 'primary' ? 'bg-gradient-to-br from-primaryLight/80 to-primaryDark/80'
-                            : type==='secondary' ? 'bg-gradient-to-br from-secondaryLight/80 to-secondaryDark/80' 
+                            : type === 'secondary' ? 'bg-gradient-to-br from-secondaryLight/80 to-secondaryDark/80'
                                 : 'bg-gradient-to-br from-tertiaryLight/80 to-tertiaryDark/80'}`}>
                         {title}
                     </span>
@@ -56,13 +57,13 @@ const TourCard: React.FC<{
                   rotate-y-180 group-hover:rotate-y-0
                    flex flex-col justify-center gap-20
                   `}>
-                    <div className='flex flex-col gap-2 items-center text-white'>
-                        <span className='text-sm uppercase'>Only</span>
-                        <span className='text-6xl font-thin'>${price}</span>
-                    </div>
-                    <Button className='justify-center self-center' type='primary'>
-                        Book now!
-                    </Button>
+                <div className='flex flex-col gap-2 items-center text-white'>
+                    <span className='text-sm uppercase'>Only</span>
+                    <span className='text-6xl font-thin'>${price}</span>
+                </div>
+                <Button className='justify-center self-center' type='primary'>
+                    Book now!
+                </Button>
             </div>
         </div>
     );

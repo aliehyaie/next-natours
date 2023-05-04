@@ -1,4 +1,5 @@
 import React, {PropsWithChildren} from 'react';
+import {twMerge} from "tailwind-merge";
 
 const Button: React.FC<PropsWithChildren & { className?: string; type?: 'primary' | 'secondary' }> = ({
                                                                                                           children,
@@ -7,7 +8,7 @@ const Button: React.FC<PropsWithChildren & { className?: string; type?: 'primary
                                                                                                       }) => {
     return (
         <button className={`
-        ${type === 'primary' ? `bg-white text-text py-4
+        ${twMerge (type === 'primary' ? `bg-white text-text py-4
          rounded-full
          transition-all
          relative
@@ -35,8 +36,7 @@ const Button: React.FC<PropsWithChildren & { className?: string; type?: 'primary
         transition-all duration-200
         hover:bg-primary hover:text-white hover:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:-translate-y-0.5
         active:shadow-[0_0.5rem_1rem_rgba(0,0,0,0.15)] active:translate-0
-        `}
-           ${className}
+        `, className)}
         `}>
             {children}
         </button>
