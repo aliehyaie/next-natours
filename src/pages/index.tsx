@@ -5,6 +5,7 @@ import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
 import TourCard from "@/components/TourCard/TourCard";
+import ReviewCard from "@/components/ReviewCard/ReviewCard";
 
 export default function Home() {
     return (
@@ -173,22 +174,30 @@ export default function Home() {
                         <h2 className='secondary-header mb-20'>
                             We make people genuinely happy
                         </h2>
-                        <div
-                            className='w-9/12 m-auto shadow-[0_3rem_6rem_rgba(0,0,0,0.1)] p-16 bg-white rounded text-base -skew-x-12'>
-                            <div className='skew-x-12'>
-                                <figure className='w-36 h-36 story-circle bg-secondaryLight float-left mr-8 relative'>
-                                    <Image src='/img/nat-8.jpg' alt='Person on a tour' style={{objectFit: 'cover'}}
-                                           fill/>
-                                </figure>
-                                <h3 className='tertiary-header mb-4'>I had the best week ever with my family</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                                    asperiores,
-                                    corporis dignissimos earum mollitia odit sit sunt tempora. Cumque,
-                                    reprehenderit.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quaerat!
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, vel.
-                                </p>
+                        <div className='flex flex-col gap-12'>
+                            <ReviewCard user='Jack Wilson'
+                                        title='WOW! My life is completely different now'
+                                        description='   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                    asperiores,
+                    corporis dignissimos earum mollitia odit sit sunt tempora. Cumque,
+                    reprehenderit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quaerat!
+                '
+                                        userPic='/img/nat-8.jpg'/>
+                            <ReviewCard user='Mary Smith'
+                                        title='I had the best week ever with my family'
+                                        description='   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                    asperiores,
+                    corporis dignissimos earum mollitia odit sit sunt tempora. Cumque,
+                    reprehenderit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quaerat!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, vel.
+                '
+                                        userPic='/img/nat-9.jpg'/>
+                            <div className='text-center'>
+                                <Button type='secondary'>
+                                    Read all Stories &rarr;
+                                </Button>
                             </div>
                         </div>
                     </Container>
