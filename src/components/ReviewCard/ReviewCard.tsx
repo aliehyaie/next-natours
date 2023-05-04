@@ -9,7 +9,7 @@ const ReviewCard: React.FC<{ user: string; title: string; userPic: string, descr
                                                                                                      }) => {
     return (
         <div
-            className='w-9/12 m-auto shadow-[0_3rem_6rem_rgba(0,0,0,0.1)] p-16 bg-white rounded text-base -skew-x-12 group'>
+            className='w-9/12 m-auto shadow-[0_3rem_6rem_rgba(0,0,0,0.1)] p-16 bg-white/60 rounded text-base -skew-x-12 group'>
             <div className='skew-x-12'>
                 <figure className='w-36 h-36 story-circle bg-secondaryLight float-left mr-8 relative'>
                     <Image src={userPic}

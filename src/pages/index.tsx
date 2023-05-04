@@ -169,7 +169,14 @@ export default function Home() {
                         </div>
                     </Container>
                 </section>
-                <section className='py-36 bg-grey-light1'>
+                <section className='py-36 relative'>
+                    <div className='absolute opacity-20 top-0 left-0 h-full w-full -z-10'>
+                        <video className='w-full h-full object-cover' autoPlay muted loop>
+                            <source src='/img/video.mp4' type='video/mp4'/>
+                            <source src='/img/video.webm' type='video/webm'/>
+                            Your browser is not supported!
+                        </video>
+                    </div>
                     <Container>
                         <h2 className='secondary-header mb-20'>
                             We make people genuinely happy
