@@ -2,7 +2,6 @@ import Header from "../components/Header/Header";
 import Container from "@/components/Hoc/Container/Container";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
-import Icon from "@/components/Icon/Icon";
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
 import TourCard from "@/components/TourCard/TourCard";
 import ReviewCard from "@/components/ReviewCard/ReviewCard";
