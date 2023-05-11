@@ -5,6 +5,7 @@ import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
 import TourCard from "@/components/TourCard/TourCard";
 import ReviewCard from "@/components/ReviewCard/ReviewCard";
+import Input from "@/components/Input/Input";
 
 export default function Home() {
     return (
@@ -206,6 +207,34 @@ export default function Home() {
                                 </Button>
                             </div>
                         </div>
+                    </Container>
+                </section>
+                <section className='py-36 bg-gradient-to-br from-primaryLight to-primaryDark'>
+                    <Container>
+                        <div className='bg-[linear-gradient(105deg,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.8)50%,rgba(255,255,255,0)50%),url(/img/nat-10.jpg)]
+                         h-[500px] rounded shadow-[0_1.5rem_4rem_rgba(0,0,0,0.15)] bg-cover'>
+                            <div>
+                                <div className='w-1/2 p-16'>
+                                    <form action='#' className='flex flex-col gap-5'>
+                                        <h2 className='secondary-header'>
+                                            Start booking now
+                                        </h2>
+                                        <Input
+                                            placeholder='Full Name'
+                                            id='name'
+                                            label='Full Name'
+                                            required/>
+                                        <Input
+                                            placeholder='Email address'
+                                            id='email'
+                                            type='email'
+                                            label='Email address'
+                                            required/>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
                     </Container>
                 </section>
             </main>

@@ -47,7 +47,7 @@ module.exports = {
             white: '#fff',
             primaryLight: '#7ed56f',
             primary: '#55c57a',
-            prD:'#342',
+            prD: '#342',
             primaryDark: '#28b485',
             secondaryLight: '#ffb900',
             secondaryDark: '#ff7730',
@@ -58,7 +58,9 @@ module.exports = {
 
             grey: {
                 light1: '#f7f7f7',
-                light2: '#eee'
+                light2: '#eee',
+                dark1: '#777',
+                dark2: '#999'
             }
         },
         extend: {
