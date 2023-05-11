@@ -6,6 +6,7 @@ import FeatureCard from "@/components/FeatureCard/FeatureCard";
 import TourCard from "@/components/TourCard/TourCard";
 import ReviewCard from "@/components/ReviewCard/ReviewCard";
 import Input from "@/components/Input/Input";
+import Radio from "@/components/Radio/Radio";
 
 export default function Home() {
     return (
@@ -230,11 +231,25 @@ export default function Home() {
                                             type='email'
                                             label='Email address'
                                             required/>
+                                        <div className='flex gap-2'>
+                                            <Radio
+                                                id='small'
+                                                name='size'
+                                                label='Small tour group'
+                                            />
+                                            <Radio
+                                                id='large'
+                                                name='size'
+                                                label='Large tour group'
+                                            />
+                                        </div>
+                                        <Button className='bg-primary mt-4 px-14 text-white w-fit before:bg-primary'>
+                                            Next Step &rarr;
+                                        </Button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-
                     </Container>
                 </section>
             </main>

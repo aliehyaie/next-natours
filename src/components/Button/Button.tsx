@@ -35,6 +35,7 @@ const Button: React.FC<PropsWithChildren & { className?: string; type?: 'primary
         p-1 text-base 
         transition-all duration-200
         hover:bg-primary hover:text-white hover:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:-translate-y-0.5
+        focus:outline-none
         active:shadow-[0_0.5rem_1rem_rgba(0,0,0,0.15)] active:translate-0
         `, className)}
         `}>
