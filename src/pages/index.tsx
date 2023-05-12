@@ -7,6 +7,7 @@ import TourCard from "@/components/TourCard/TourCard";
 import ReviewCard from "@/components/ReviewCard/ReviewCard";
 import Input from "@/components/Input/Input";
 import Radio from "@/components/Radio/Radio";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
     return (
@@ -253,6 +254,7 @@ export default function Home() {
                     </Container>
                 </section>
             </main>
+            <Footer />
         </>
     )
 }

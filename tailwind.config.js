@@ -60,7 +60,8 @@ module.exports = {
                 light1: '#f7f7f7',
                 light2: '#eee',
                 dark1: '#777',
-                dark2: '#999'
+                dark2: '#999',
+                dark3: '#333'
             }
         },
         extend: {
