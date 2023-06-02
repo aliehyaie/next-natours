@@ -31,12 +31,15 @@ const navLinks = [
 const Navigation = () => {
     return (
         <div className="navigation">
-            <input type="checkbox" className="hidden" id="nav-toggle"/>
+            <input type="checkbox" className="hidden peer" id="nav-toggle"/>
             <label htmlFor="nav-toggle"
-                   className="bg-white h-20 w-20 block fixed top-14 right-12 rounded-full z-50">Menu</label>
+                   className="bg-white h-20 w-20 block fixed top-14 right-12 rounded-full z-50 shadow-[0_1rem_3rem_rgba(#000,0.1)]">Menu</label>
             <div
-                className="h-16 w-16 rounded-full fixed top-16 right-14 bg-[radial-gradient(#7ed56f,#28b485)] z-30 scale-[1200]">&nbsp;</div>
-            <nav className='h-screen w-full fixed top-0 right-0 z-40'>
+                className="h-16 w-16 rounded-full fixed top-16 right-14
+                 peer-checked:scale-[120]
+                 transition-transform duration-700
+                 bg-[radial-gradient(#7ed56f,#28b485)] z-30">&nbsp;</div>
+            <nav className='h-screen fixed top-0 right-0 z-40 opacity-0 w-0 transition-all duration-700 peer-checked:opacity-100 peer-checked:w-full'>
                 <ul className='flex flex-col justify-center items-center h-full gap-4'>
                     {
                         navLinks.map(navLink => <li>
