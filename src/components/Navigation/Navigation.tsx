@@ -33,7 +33,21 @@ const Navigation = () => {
         <div className="navigation">
             <input type="checkbox" className="hidden peer" id="nav-toggle"/>
             <label htmlFor="nav-toggle"
-                   className="bg-white h-20 w-20 block fixed top-14 right-12 rounded-full z-50 shadow-[0_1rem_3rem_rgba(#000,0.1)]">Menu</label>
+                   className="bg-white h-20 w-20 block fixed top-14 right-12 rounded-full z-50 shadow-[0_1rem_3rem_rgba(#000,0.1)]
+                   flex justify-center items-center cursor-pointer group
+                   peer-checked:[&_span]:bg-transparent
+                   peer-checked:[&_span:before]:rotate-[135deg]
+                   peer-checked:[&_span:before]:top-0
+                   peer-checked:[&_span:after]:-rotate-[135deg]
+                   peer-checked:[&_span:after]:top-0
+                   ">
+                <span className="w-8 h-[3px] bg-grey-dark3 inline-block
+                       relative
+                      group-hover:before:-top-3 group-hover:after:top-3
+                    before:w-8 before:h-[3px] before:bg-grey-dark3 before:inline-block before:left-0 before:absolute before:-top-2 before:transition-all before:duration-200
+                    after:w-8 after:h-[3px] after:bg-grey-dark3 after:inline-block after:absolute after:top-2 after:transition-all after:duration-200
+                " />
+            </label>
             <div
                 className="h-16 w-16 rounded-full fixed top-16 right-14
                  peer-checked:scale-[120]
