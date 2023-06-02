@@ -45,9 +45,9 @@ module.exports = {
     theme: {
         colors: {
             white: '#fff',
-            primaryLight: '#7ed56f',
-            primary: '#55c57a',
             prD: '#342',
+            primary: '#55c57a',
+            primaryLight: '#7ed56f',
             primaryDark: '#28b485',
             secondaryLight: '#ffb900',
             secondaryDark: '#ff7730',
@@ -130,7 +130,7 @@ module.exports = {
                 horizontal: '6rem',
                 vertical: '8rem',
                 '7.5': '1.875rem'
-            }
+            },
         },
     },
     plugins: [rotateY, perspective, backfaceVisibility],

@@ -8,10 +8,12 @@ import ReviewCard from "@/components/ReviewCard/ReviewCard";
 import Input from "@/components/Input/Input";
 import Radio from "@/components/Radio/Radio";
 import Footer from "@/components/Footer/Footer";
+import Navigation from "@/components/Navigation/Navigation";
 
 export default function Home() {
     return (
         <>
+            <Navigation />
             <Header/>
             <main>
                 <section className='py-62.5 bg-grey-light1 -mt-[20vh]'>
